@@ -9,7 +9,8 @@
     <video playsinline autoplay></video>
     <button>Take snapshot</button>
 			<canvas></canvas>
-			<span><script>
+			<span></span>
+			<script>
 				video = document.querySelector('video');
 				canvas = document.querySelector('canvas');
 				canvas.width = 48;
@@ -73,6 +74,6 @@ function handleError(error) {
 }
 
 navigator.mediaDevices.getUserMedia(constraints).then(handleSuccess).catch(handleError);
-    </script></span>
+    </script>
   </body>
 </html>
